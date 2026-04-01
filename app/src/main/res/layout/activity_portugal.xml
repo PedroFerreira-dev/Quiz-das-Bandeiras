@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".portugal">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#00B0FF"
+            android:text="Que país é este ?"
+            android:textAlignment="center"
+            android:textColor="#FDF9F9"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            app:srcCompat="@drawable/portugal" />
+
+        <RadioGroup
+            android:id="@+id/rdgOpcoes10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rdbWrong28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paquistão" />
+
+            <RadioButton
+                android:id="@+id/rdbWrong29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emirados Árabes" />
+
+            <RadioButton
+                android:id="@+id/rdbCorrect10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portugal" />
+
+            <RadioButton
+                android:id="@+id/rdbWrong30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Macedônia" />
+
+            <Button
+                android:id="@+id/btnResponder10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00B0FF"
+                android:text="Responder" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
